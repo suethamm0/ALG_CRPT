@@ -16,28 +16,28 @@ int main(void){
 }
 
 void msgBoasVindas(void){
-    if (DEBUG) printf ("\nEntrando na funÁ„o de msgBoasVindas");
+    if (DEBUG) printf ("\nEntrando na fun√ß√£o de msgBoasVindas");
     printf("\n*******************");
     printf("\n Leitor de Arquivo");
     printf("\n*******************");
-    if (DEBUG) printf ("\nSaindo da funÁ„o de msgBoasVindas");
+    if (DEBUG) printf ("\nSaindo da fun√ß√£o de msgBoasVindas");
 }
 
 
 int msgSaida(){
-    if (DEBUG) printf ("\nEntrando na funÁ„o de msgSaida");
+    if (DEBUG) printf ("\nEntrando na fun√ß√£o de msgSaida");
     printf("\n*******************");
     printf("\n      Adeus!");
     printf("\n*******************");
     getchar();
-    if (DEBUG) printf ("\nSaindo da funÁ„o de msgSaida");
+    if (DEBUG) printf ("\nSaindo da fun√ß√£o de msgSaida");
     return (0);
 }
 
 int lerArquivo(){
     msgBoasVindas();
 
-    if (DEBUG) printf ("\nEntrando na funÁ„o de lerArquivo");
+    if (DEBUG) printf ("\nEntrando na fun√ß√£o de lerArquivo");
     char str[50];
     printf("\nDigite o nome do arquivo:");
     scanf(" %s",str);
@@ -46,7 +46,7 @@ int lerArquivo(){
 
 	arq = fopen(str, "r");
 	if(arq == NULL){
-	    printf("\nErro, n„o foi possÌvel abrir o arquivo\n");
+	    printf("\nErro, n√£o foi poss√≠vel abrir o arquivo\n");
 	    system("pause");
 	    system("CLS");
 	    msgBoasVindas();
@@ -60,19 +60,19 @@ int lerArquivo(){
 	    system("CLS");
 	    msgBoasVindas();
      }
-    if (DEBUG) printf ("\nSaindo da funÁ„o de lerArquivo");
+    if (DEBUG) printf ("\nSaindo da fun√ß√£o de lerArquivo");
 	return 0;
 }
 
 void setarAcentuacao(){
-    if (DEBUG) printf ("\nEntrando na funÁ„o de setarAcentuacao");
+    if (DEBUG) printf ("\nEntrando na fun√ß√£o de setarAcentuacao");
     setlocale(LC_ALL, "Portuguese");
-    if (DEBUG) printf ("\nSaindo da funÁ„o de setarAcentuacao");
+    if (DEBUG) printf ("\nSaindo da fun√ß√£o de setarAcentuacao");
 }
 
 int menuUsuario(){
     msgBoasVindas();
-    if (DEBUG) printf ("\nEntrando na funÁ„o de menuUsuario");
+    if (DEBUG) printf ("\nEntrando na fun√ß√£o de menuUsuario");
     setbuf(stdin, NULL);
     int continuar=1;
     do
@@ -105,10 +105,10 @@ int menuUsuario(){
 
             default:
                 msgBoasVindas();
-                printf("\nDigite uma opÁ„o valida!");
+                printf("\nDigite uma op√ß√£o valida!");
         }
     } while(continuar);
-    if (DEBUG) printf ("\nSaindo da funÁ„o de menuUsuario");
+    if (DEBUG) printf ("\nSaindo da fun√ß√£o de menuUsuario");
 }
 
 void criptografar(){
