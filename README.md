@@ -1,2 +1,2 @@
 # ALG_CRPT
-Algoritmos de aluno
+Algoritmos de alunos
