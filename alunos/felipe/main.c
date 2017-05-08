@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
+#include <malloc.h>
+
+
 #define DEBUG 0
 
 void msgBoasVindas(void);
