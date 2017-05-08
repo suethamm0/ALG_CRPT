@@ -128,7 +128,7 @@ void criptografar(){
     FILE *fp;
 	unsigned char * corpo;
     unsigned long long int lSize;
-    char arquivo1[50],arquivo2[50], ch;
+    char arquivo1[50],arquivo2[50];
 	
     printf("\nDigite o nome do arquivo de origem:");
     scanf(" %s",arquivo1);
